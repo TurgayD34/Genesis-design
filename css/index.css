@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+body nav {
+  width: 1109px;
+  height: 23px;
+  margin-left: 159px;
+  margin-top: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+body nav .nav-img {
+  width: 90.13px;
+  height: 19.34px;
+  margin-left: 0;
+  margin-top: 0.12px;
+}
+
+body nav .nav-list {
+  width: 200px;
+  height: 23px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+
+body nav .nav-list a {
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  color: #111111;
+}
+
+body header div {
+  display: inline-block;
+}
+
+body header .header-title {
+  width: 638px;
+  height: 251px;
+  margin-left: 125px;
+  margin-top: 98px;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  float: left;
+}
+
+body header .header-title h4 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.423077px;
+  color: #4a4ff2;
+}
+
+body header .header-title p {
+  font-size: 40px;
+  line-height: 60px;
+  color: #111;
+  margin-top: 32px;
+}
+
+body header .header-title p span {
+  color: #4a4ff2;
+}
+
+body header .header-quote {
+  width: 220px;
+  height: 23px;
+  margin-left: 190px;
+  margin-top: 292px;
+  mix-blend-mode: normal;
+}
+
+body header .header-quote .header-quote-rect {
+  width: 30px;
+  height: 2px;
+  background-color: #111;
+  opacity: 0.5;
+}
+
+body header .header-quote p {
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #111;
+  opacity: 0.6;
+}
+
+body main .main-img-container {
+  width: 1110px;
+  height: 1960px;
+  margin-left: 125px;
+  margin-top: 144px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+body main .group-text {
+  width: 635px;
+  height: 106px;
+  margin-left: 126px;
+  margin-top: 91px;
+}
+/*# sourceMappingURL=index.css.map */
