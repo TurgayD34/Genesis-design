@@ -4,20 +4,56 @@
     box-sizing: border-box;
 }
 $font-family: 'Mulish', sans-serif;
-$size-357: 357px;
-$size-356: 356px;
-$size-350: 350;
+$color: #111111;
+.navigation{
+    width: 1109px;
+    height: 23px;
+    margin-left: 159px;
+    margin-top: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.h3{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color;
+}
+.h4{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color;
+}
+.main-p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.main-h5{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+}
+.list{
+    width: 200px;
+    height: 23px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
 
 body{
     background-color: #fff;
     nav{
-        width: 1109px;
-        height: 23px;
-        margin-left: 159px;
-        margin-top: 59px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
+        @extend .navigation;
         .nav-img{
             width: 90.13px;
             height: 19.34px;
@@ -25,13 +61,7 @@ body{
             margin-top: 0.12px;
         }
         .nav-list{
-            width: 200px;
-            height: 23px;
-            list-style-type: none;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            text-align: center;
+            @extend .list;
             position: absolute;
             right: 0;
             
@@ -117,11 +147,228 @@ body{
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
         }
-        .group-text{
-            width: 635px;
+        .group{
+            width: 1079px;
             height: 106px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             margin-left: 126px;
             margin-top: 91px;
+            font-family: $font-family;
+            font-style: normal;
+
+            .group-text{
+                width: 635px;
+                height: 106px;
+                font-family: bold;
+                font-size: 28px;
+                line-height: 38px;
+                color: #111;
+            }
+            .group-list{
+                margin-left: 94px;
+                margin-top: 8px;
+                ul{
+                    display: inline-block;
+                    margin-left: 30px;
+                    
+                    li{
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #111;
+                        mix-blend-mode: normal;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        .awards{
+            width: 1110px;
+            height: 823px;
+            margin-left: 125px;
+            margin-top: 101px;
+            font-family: $font-family;
+            font-style: normal;
+            .awards-line-top{
+                width: 1110px;
+                height: 2px;
+                background: #D8D8D8;
+                margin-top: 101px;
+            }
+            .awwwards{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 48px;
+
+                div{
+                    h3{
+                        @extend .h3;
+                    }
+                }
+                .awwwards-h4-site{
+                    h4{
+                        @extend .h4;
+                        margin-left: 353px;
+                    }
+                }
+                .awwwards-box1{
+                    width: 190px;
+                    height: 110px;
+                    margin-left: 160px;
+
+                    h5{
+                        @extend .main-h5;
+                    }
+                    p{
+                        @extend .main-p;
+                    }
+                }
+                .awwwards-date1{
+                    margin-left: 121px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: #111111;
+                }
+                .awwwards-h4-best{
+                    h4{
+                        @extend .h4;
+                        margin-left: 465px;
+                        margin-top: 80px;
+                    }
+                }
+                .awwwards-box2{
+                    width: 190px;
+                    height: 110px;
+                    margin-top: 80px;
+                    
+                    h5{
+                        @extend .main-h5;
+                    }
+                    p{
+                        @extend .main-p;
+                    }
+                }
+                .awwwards-date2{
+                    margin-top: 80px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: #111111;
+                }
+
+            }
+            .awards-line-middle{
+                width: 1110px;
+                height: 2px;
+                background: #D8D8D8;
+                margin-top: 58px;
+            }
+            .cssDesign{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 48px;
+                div{
+                    h3{
+                        @extend .h3;
+                    }
+                }
+                .design-h4-site{
+                    h4{
+                        @extend .h4;
+                        margin-left: 130px;
+                        // shold be 276px but it does not work
+                    }
+                }
+                .design-box1{
+                    width: 190px;
+                    height: 110px;
+                    h5{
+                        @extend .main-h5;
+                    }
+                    p{
+                        @extend .main-p;
+                    }
+                }
+                .design-h4-best{
+                    h4{
+                       @extend .h4;
+                        margin-left: 455px;
+                        margin-top: 77px;
+                    }
+                }
+                .design-box2{
+                    width: 190px;
+                    height: 110px;
+                    margin-top: 77px;
+
+                    h5{
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #111111;
+                    }
+                    p{
+                        @extend .main-p;
+                    }
+                }
+                .design-date2{
+                    margin-top: 80px;
+                }
+            }
+            .awards-line-bottom{
+                width: 1110px;
+                height: 2px;
+                background: #D8D8D8;
+                margin-top: 58px;
+            }
+        }
+    }
+    .footer{
+        @extend .navigation;
+        margin-bottom: 49px;
+
+        .footer-nav{
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer-img{
+                width: 90.13px;
+                height: 19.34px;
+                margin-left: 0;
+                margin-top: 0.12px;
+            }
+            .footer-list{
+                @extend .list;
+                position: absolute;
+                margin-left: 687px;
+
+                a{
+                    font-family: $font-family;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: -0.346154px;
+                    color: #111111;
+                }
+            }
+        }
+        .footer-icons{
+            width: 105px;
+            height: 15px;
+            margin-left: 895px;
+            
+            .fab{
+                margin-left: 24px;
+            }
         }
     }
 }

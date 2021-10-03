@@ -5,11 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-}
-
-body nav {
+.navigation, body nav, body .footer {
   width: 1109px;
   height: 23px;
   margin-left: 159px;
@@ -22,14 +18,37 @@ body nav {
   position: relative;
 }
 
-body nav .nav-img {
-  width: 90.13px;
-  height: 19.34px;
-  margin-left: 0;
-  margin-top: 0.12px;
+.h3, body main .awards .awwwards div h3, body main .awards .cssDesign div h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #111111;
 }
 
-body nav .nav-list {
+.h4, body main .awards .awwwards .awwwards-h4-site h4, body main .awards .awwwards .awwwards-h4-best h4, body main .awards .cssDesign .design-h4-site h4, body main .awards .cssDesign .design-h4-best h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #111111;
+}
+
+.main-p, body main .awards .awwwards .awwwards-box1 p, body main .awards .awwwards .awwwards-box2 p, body main .awards .cssDesign .design-box1 p, body main .awards .cssDesign .design-box2 p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.main-h5, body main .awards .awwwards .awwwards-box1 h5, body main .awards .awwwards .awwwards-box2 h5, body main .awards .cssDesign .design-box1 h5 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.list, body nav .nav-list, body .footer .footer-nav .footer-list {
   width: 200px;
   height: 23px;
   list-style-type: none;
@@ -43,6 +62,20 @@ body nav .nav-list {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+body {
+  background-color: #fff;
+}
+
+body nav .nav-img {
+  width: 90.13px;
+  height: 19.34px;
+  margin-left: 0;
+  margin-top: 0.12px;
+}
+
+body nav .nav-list {
   position: absolute;
   right: 0;
 }
@@ -129,10 +162,218 @@ body main .main-img-container {
       grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-body main .group-text {
-  width: 635px;
+body main .group {
+  width: 1079px;
   height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 126px;
   margin-top: 91px;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+}
+
+body main .group .group-text {
+  width: 635px;
+  height: 106px;
+  font-family: bold;
+  font-size: 28px;
+  line-height: 38px;
+  color: #111;
+}
+
+body main .group .group-list {
+  margin-left: 94px;
+  margin-top: 8px;
+}
+
+body main .group .group-list ul {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+body main .group .group-list ul li {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+body main .awards {
+  width: 1110px;
+  height: 823px;
+  margin-left: 125px;
+  margin-top: 101px;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+}
+
+body main .awards .awards-line-top {
+  width: 1110px;
+  height: 2px;
+  background: #D8D8D8;
+  margin-top: 101px;
+}
+
+body main .awards .awwwards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+body main .awards .awwwards .awwwards-h4-site h4 {
+  margin-left: 353px;
+}
+
+body main .awards .awwwards .awwwards-box1 {
+  width: 190px;
+  height: 110px;
+  margin-left: 160px;
+}
+
+body main .awards .awwwards .awwwards-date1 {
+  margin-left: 121px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #111111;
+}
+
+body main .awards .awwwards .awwwards-h4-best h4 {
+  margin-left: 465px;
+  margin-top: 80px;
+}
+
+body main .awards .awwwards .awwwards-box2 {
+  width: 190px;
+  height: 110px;
+  margin-top: 80px;
+}
+
+body main .awards .awwwards .awwwards-date2 {
+  margin-top: 80px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #111111;
+}
+
+body main .awards .awards-line-middle {
+  width: 1110px;
+  height: 2px;
+  background: #D8D8D8;
+  margin-top: 58px;
+}
+
+body main .awards .cssDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+body main .awards .cssDesign .design-h4-site h4 {
+  margin-left: 130px;
+}
+
+body main .awards .cssDesign .design-box1 {
+  width: 190px;
+  height: 110px;
+}
+
+body main .awards .cssDesign .design-h4-best h4 {
+  margin-left: 455px;
+  margin-top: 77px;
+}
+
+body main .awards .cssDesign .design-box2 {
+  width: 190px;
+  height: 110px;
+  margin-top: 77px;
+}
+
+body main .awards .cssDesign .design-box2 h5 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+body main .awards .cssDesign .design-date2 {
+  margin-top: 80px;
+}
+
+body main .awards .awards-line-bottom {
+  width: 1110px;
+  height: 2px;
+  background: #D8D8D8;
+  margin-top: 58px;
+}
+
+body .footer {
+  margin-bottom: 49px;
+}
+
+body .footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .footer .footer-nav .footer-img {
+  width: 90.13px;
+  height: 19.34px;
+  margin-left: 0;
+  margin-top: 0.12px;
+}
+
+body .footer .footer-nav .footer-list {
+  position: absolute;
+  margin-left: 687px;
+}
+
+body .footer .footer-nav .footer-list a {
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  color: #111111;
+}
+
+body .footer .footer-icons {
+  width: 105px;
+  height: 15px;
+  margin-left: 895px;
+}
+
+body .footer .footer-icons .fab {
+  margin-left: 24px;
 }
 /*# sourceMappingURL=index.css.map */

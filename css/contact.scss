@@ -1,0 +1,111 @@
+@import 'nav-footer.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$font-family: 'Mulish', sans-serif;
+$color: #111111;
+
+main{
+    position: relative;
+    .main-h1{
+        width: 475px;
+        height: 174px;
+        margin-left: 125px;
+        margin-top: 110px;
+        h1{
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 55px;
+            color: $color;
+        }
+    }
+    .main-text{
+        width: 445px;
+        height: 56px;
+        margin-left: 125px;
+        margin-top: 22px;
+        p{
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: $color;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+    .main-form{
+        width: 475px;
+        height: 291px;
+        position: absolute;
+        left: 765px;
+        top: 10px;
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: $font-family;
+        
+        .input-data{
+            height: 60px;
+            width: 100%;
+            position: relative;
+
+            input{
+                height: 100%;
+                width: 100%;
+                border: none;
+                font-size: 12px;
+                border-bottom: 2px solid #D8D8D8;
+            }
+            input:focus ~ label, input:valid ~ label {
+                transform: translateY(-20px);
+                font-size: 14px;
+                color: $color;  
+            }
+            label{
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                color: $color;
+                pointer-events: none;font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: $color;
+                mix-blend-mode: normal;
+                opacity: 0.6;
+            }
+        }
+        .form-submit-btn{
+            width: 125px;
+            height: 50px;
+            background: #4A4FF2;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .form-submit-btn:hover{
+            background-color: $color;
+        }
+    }
+    .main-map{
+        width: 1110px;
+        height: 570px;
+        margin-left: 125px;
+        margin-top: 120px;
+    }
+}
